@@ -20,7 +20,7 @@ public class NeverGiveUpTour {
             tourLengths.add(length);  
 
             tour.printBoard(); // Display the board after each tour  
-
+            count++;
         }
 
         // Display tour lengths
@@ -31,6 +31,6 @@ public class NeverGiveUpTour {
                 System.out.printf("%11d | %14d%n", i + 1, tourLengths.get(i));
             }
         }
-        System.out.println(" It took " + count + " iterations to reacha full complete tour!");
+        System.out.println(" It took " + count + " iterations to reach a full complete tour!");
     }
 }

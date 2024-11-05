@@ -4,14 +4,14 @@ import java.util.List;
 
 public class KnightsTour {
     protected static final int SIZE = 8; // Size of the chessboard (8x8)
-    protected int[][] board; // Chessboard to track the knight's moves
+    protected static int[][] board; // Chessboard to track the knight's moves
 
     // Possible moves of a knight in chess (relative to current position)
-    protected final int[] H_MOVE = {2, 1, -1, -2, -2, -1, 1, 2};
-    protected final int[] V_MOVE = {-1, -2, -2, -1, 1, 2, 2, 1};
+    protected static final int[] H_MOVE = {2, 1, -1, -2, -2, -1, 1, 2};
+    protected static final int[] V_MOVE = {-1, -2, -2, -1, 1, 2, 2, 1};
 
-    protected int knightRow; // Current row of the knight
-    protected int knightCol; // Current column of the knight
+    protected static int knightRow; // Current row of the knight
+    protected static int knightCol; // Current column of the knight
     protected int moveNum = 1; // Move counter
 
     // Constructor initializes the chessboard and starting position
@@ -69,7 +69,7 @@ public class KnightsTour {
         System.out.println("\n");
     }
 
-    public void resetBoard()
+    public void resetBoard() // Helps to reset the board variables
     {
         for(int i = 0; i < SIZE; i++){
             for(int j = 0; j < SIZE; j++){
